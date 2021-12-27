@@ -17,6 +17,17 @@ I love complex tasks, constantly working on myself, strive to gain new knowledge
 * Figma, Adobe Photoshop.
 
 ## Code examples:
+1. Codewars:
+  ```javascript
+  function multiply(a, b){
+  return a * b;
+  }
+
+  console.log(multiply(1, 7));
+  ```
+2. My projects:
+* [LandingPage "DesignVisions"](https://designvisions.ru/)
+* [LandingPage "Фирма Репетитор"](https://xn--80akajdusffcfvbr.xn--p1ai/)
 
 ## Education:
 2005 - 2010
