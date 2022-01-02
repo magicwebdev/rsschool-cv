@@ -1,3 +1,19 @@
+/* Animation */
+@keyframes circlesbeat {
+  from {
+
+    transform: scale(1);
+  }
+  50% {
+
+    transform: scale(1.1);
+  }
+  to {
+
+    transform: scale(1);
+  }
+}
+
 /* Base style */
 *,
 *:before,
@@ -13,7 +29,13 @@ a {
   display: inline-block;
   color: #fa8669;
   opacity: .6;
+  transition: all .5s;
 }
+a:hover {
+  color: #fff;
+  opacity: 1;
+}
+
 ul,
 li {
   list-style: none;
@@ -45,7 +67,7 @@ span {
 .container {
   max-width: 1140px;
   margin: 30px auto;
-  padding: 0 30px;
+  padding: 0 40px;
   background-color: #333333;
 }
 
@@ -58,12 +80,11 @@ span {
   font-size: 22px;
   font-weight: 600;
   color: #fa8669;
-  /* text-transform: uppercase; */
 }
 
 .header {
   position: relative;
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .header::after {
@@ -87,11 +108,13 @@ span {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .menu-item {
   margin-top: 0;
   font-weight: 600;
+  padding: 10px;
 }
 
 .menu-link {
@@ -99,11 +122,16 @@ span {
   text-decoration: none;
   text-transform: uppercase;
   opacity: 1;
+  transition: all .5s;
+}
+
+.menu-link:hover {
+  color: #fa8669;
 }
 
 .cover {
   position: relative;
-  padding: 100px 0;
+  padding: 40px 0 60px;
   display: flex;
 }
 
@@ -134,12 +162,32 @@ span {
 }
 
 .hero-name {
-  margin-top: 30px;
+  margin-top: 10px;
   font-size: 34px;
   color: #fa8669;
 }
 
 .hero-img {
+  position: relative;
+  min-height: 340px;
+}
+
+.circles {
+  position: relative;
+  margin: 0 auto;
+  animation-name: circlesbeat;
+  animation-duration: 3.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+
+}
+
+.avatar {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
   margin: 0 auto;
   border-radius: 50%;
 }
@@ -170,7 +218,7 @@ span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 0;
+  right: 2px;
   display: block;
   width: 1px;
   height: 90%;
@@ -250,11 +298,42 @@ span {
   line-height: 2;
 }
 
+.skills-item {
+  position: relative;
+}
+
+.skills-percent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: block;
+  width: 80%;
+  height: 4px;
+  background-color: #C4C4C4;
+  border-radius: 16px;
+  z-index: 10;
+}
+
+.skills-item::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: block;
+  width: 60%;
+  height: 4px;
+  background-color: #fa8669;
+  border-radius: 16px;
+}
+
 .experience li + li {
   margin-top: 20px;
 }
 
 .listing {
+  white-space: pre-wrap;
   padding: 20px;
   border-radius: 16px;
   background-color: rgba(255, 255, 255, .1);
@@ -289,4 +368,37 @@ span {
 .logo-link {
   margin-left: 10px;
   opacity: 1;
+}
+
+@media (max-width: 1140px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cover {
+    flex-direction: column;
+  }
+
+  .about {
+    margin-top: 30px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content-sidebar {
+    padding-right: 0;
+  }
+
+  .content-sidebar::after {
+    display: none;
+  }
+
+  .content-center {
+    padding-left: 0;
+    margin-top: 40px;
+  }
 }

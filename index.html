@@ -31,7 +31,10 @@
     <main>
       <section class="cover">
           <div class="hero">
-            <img src="images/avatar.jpg" alt="my photo" class="hero-img" width="200" height="200">
+            <div class="hero-img">
+              <img src="images/avatar.jpg" alt="my photo" class="avatar" width="200" height="200">
+              <img src="images/circles.svg" alt="circles" class="circles" width="320" height="320">
+            </div>
             <h1 class="hero-name">Aleksandra Khrapkova</h1>
             <p class="text"><span>Front-end Developer</span></p>
           </div>
@@ -78,11 +81,16 @@
           <div id="skills" class="skills">
             <h2 class="title">Skills:</h2>
             <ul class="skills-list">
-              <li class="skills-item">HTML&CSS</li>
-              <li class="skills-item">JavaScript</li>
-              <li class="skills-item">C#</li>
-              <li class="skills-item">SQL</li>
-              <li class="skills-item">Figma</li>
+              <li class="skills-item">HTML&CSS<span class="skills-percent"
+                style="width: calc(100% - 90%);"></span></li>
+              <li class="skills-item">JavaScript<span class="skills-percent"
+                style="width: calc(100% - 60%);"></span></li>
+              <li class="skills-item">C#<span class="skills-percent"
+                style="width: calc(100% - 80%);"></span></li>
+              <li class="skills-item">SQL<span class="skills-percent"
+                style="width: calc(100% - 80%);"></span></li>
+              <li class="skills-item">Figma<span class="skills-percent"
+                style="width: calc(100% - 70%);"></span></li>
             </ul>
           </div>
 
@@ -109,16 +117,16 @@
 
           <div id="code" class="code">
             <h2 class="title">Code example:</h2>
-            <pre class="listing"><code class="code-js">function bubbleSort(arr) {
-  const length = arr.length;
-  for (let i = 0; i < length-1; i++) {
-    for (let j = 0; j < length-1-i; j++) {
-      if (arr[j + 1] < arr[j]) {
+            <pre class="listing"><code class="code-js"><span>function</span> bubbleSort(arr) {
+  <span>const</span> length = arr.length;
+  <span>for</span> (<span>let</span> i = 0; i < length-1; i++) {
+    <span>for</span> (<span>let</span> j = 0; j < length-1-i; j++) {
+      <span>if</span> (arr[j + 1] < arr[j]) {
         [arr[j + 1], arr[j]] = [arr[j], arr[j + 1]];
       }
     }
   }
-  return arr;
+  <span>return</span> arr;
 }</code></pre>
           </div>
 
