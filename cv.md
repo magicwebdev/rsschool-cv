@@ -30,23 +30,17 @@ Freelancer
 
 ## Code example:
 ```javascript
-function checkCookies(){
-    let cookieDate = localStorage.getItem('cookieDate');
-    let cookieNotification = document.querySelector('.cookie');
-    let cookieBtn = cookieNotification.querySelector('.cookie__btn');
-
-    if( !cookieDate || (+cookieDate + 31536000000) < Date.now() ){
-        setTimeout(function () {
-          cookieNotification.classList.add('show');
-        }, 10000);
+function bubbleSort(arr) {
+    const length = arr.length;
+    for (let i = 0; i < length-1; i++) {
+      for (let j = 0; j < length-1-i; j++) {
+        if (arr[j + 1] < arr[j]) {
+          [arr[j + 1], arr[j]] = [arr[j], arr[j + 1]];
+        }
+      }
     }
-
-    cookieBtn.addEventListener('click', function(){
-        localStorage.setItem( 'cookieDate', Date.now() );
-        cookieNotification.classList.remove('show');
-    })
-  }
-checkCookies();
+    return arr;
+}
 ```
 ## Projects:
 * [DesignVisions](https://designvisions.ru/)

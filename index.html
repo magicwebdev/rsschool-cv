@@ -4,143 +4,142 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Aleksandra Khrapkova CV</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="menu-list">
-        <li class="menu-item"><a href="#about" class="menu-link">About me</a></li>
-        <li class="menu-item"><a href="#contacts" class="menu-link">Contacts</a></li>
-        <li class="menu-item"><a href="#education" class="menu-link">Education</a></li>
-        <li class="menu-item"><a href="#english" class="menu-link">English</a></li>
-        <li class="menu-item"><a href="#experience" class="menu-link">Experience</a></li>
-        <li class="menu-item"><a href="#skills" class="menu-link">Skills</a></li>
-        <li class="menu-item"><a href="#code" class="menu-link">Code</a></li>
-        <li class="menu-item"><a href="#projects" class="menu-link">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="cover">
-      <div class="hero">
-        <img src="images/avatar.jpg" alt="my photo" class="hero-img" width="200" height="200">
-        <h1 class="hero-name">Aleksandra Khrapkova</h1>
-        <p class="hero-description">Front-end Developer</p>
-      </div>
-      <div id="about" class="about">
-        <h2 class="title">About me:</h2>
-        <p class="text">
-          Hi, my name is Alexandra and I'm a junior front-end developer. My goal is to become a professional full-stack Javascript developer. I want to create cool websites, web and mobile apps with WOW effect! I love complex tasks, constantly working on myself, strive to gain new knowledge and perfection in my profession.
-        </p>
-      </div>
-    </section>
+  <div class="container">
 
-    <section class="sidebar">
-      <div id="contacts" class="contacts">
-        <h2 class="title">Contacts info:</h2>
-        <ul class="contacts-list">
-          <li class="contacts-item">Location:
-            <a href="https://yandex.ru/maps/geo/arkhangelsk/53149343/?ll=40.552674%2C64.562729&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=10" class="contacts-link" target="_blank">Russia, Arkhangelsk</a>
-          </li>
-          <li class="contacts-item">Email:
-            <a href="mailto:axi83@mail.ru" class="contacts-link">axi83@mail.ru</a>
-          </li>
-          <li class="contacts-item">Telegram:
-            <a href="https://telegram.me/magicwebdev" class="contacts-link" target="_blank">@magicwebdev</a>
-          </li>
-          <li class="contacts-item">Discord:
-            <a href="https://discordapp.com/users/919839528510971946/" class="contacts-link" target="_blank">magicwebdev#4653</a>
-          </li>
-          <li class="contacts-item">GitHub:
-            <a href="https://github.com/magicwebdev" class="contacts-link" target="_blank">magicwebdev</a>
-          </li>
+    <header class="header">
+      <nav>
+        <ul class="menu-list">
+          <li class="menu-item"><a href="#about" class="menu-link">About me</a></li>
+          <li class="menu-item"><a href="#contacts" class="menu-link">Contacts</a></li>
+          <li class="menu-item"><a href="#education" class="menu-link">Education</a></li>
+          <li class="menu-item"><a href="#english" class="menu-link">English</a></li>
+          <li class="menu-item"><a href="#experience" class="menu-link">Experience</a></li>
+          <li class="menu-item"><a href="#skills" class="menu-link">Skills</a></li>
+          <li class="menu-item"><a href="#code" class="menu-link">Code</a></li>
+          <li class="menu-item"><a href="#projects" class="menu-link">Projects</a></li>
         </ul>
-      </div>
+      </nav>
+    </header>
 
-      <div id="education" class="education">
-        <h2 class="title">Education:</h2>
-        <p class="text">
-          <span>Northern (Arctic) Federal University named after M.V. Lomonosov (NArFU)</span><br>
-          Еngineer in the specialty "Information systems and technologies"
-        </p>
-      </div>
+    <main>
+      <section class="cover">
+          <div class="hero">
+            <img src="images/avatar.jpg" alt="my photo" class="hero-img" width="200" height="200">
+            <h1 class="hero-name">Aleksandra Khrapkova</h1>
+            <p class="text"><span>Front-end Developer</span></p>
+          </div>
 
-      <div id="english" class="english">
-        <h2 class="title">English:</h2>
-        <p class="text">А2 (Pre-Intermediate)</p>
-      </div>
-    </section>
+          <div id="about" class="about">
+            <h2 class="title">About me:</h2>
+            <p class="text">
+              Hi, my name is Alexandra and I'm a junior front-end developer. My goal is to become a professional full-stack Javascript developer. I want to create cool websites, web and mobile apps with WOW effect! I love complex tasks, constantly working on myself, strive to gain new knowledge and perfection in my profession.
+            </p>
+          </div>
+      </section>
 
-    <section class="content">
-      <div id="experience" class="experience">
-        <h2 class="title">Experience:</h2>
-        <ul class="experience-list">
-          <li class="experience-item">
-            <p class="years">2010 - 2011</p>
-            <p class="text"><span>Programmer</span> at the NArFU Software Implementation and Development Laboratory</p>
-          </li>
-          <li class="experience-item">
-            <p class="years">2012 - Present</p>
-            <p class="text"><span>Freelancer</span></p>
-          </li>
-        </ul>
-      </div>
+      <section class="content">
+        <div class="content-sidebar">
+          <div id="contacts" class="contacts">
+            <h2 class="title">Contacts info:</h2>
+            <ul class="contacts-list">
+              <li class="contacts-item">Location:
+                <a href="https://yandex.ru/maps/geo/arkhangelsk/53149343/?ll=40.552674%2C64.562729&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=10" class="contacts-link" target="_blank">Russia, Arkhangelsk</a>
+              </li>
+              <li class="contacts-item">Email:
+                <a href="mailto:axi83@mail.ru" class="contacts-link">axi83@mail.ru</a>
+              </li>
+              <li class="contacts-item">Telegram:
+                <a href="https://telegram.me/magicwebdev" class="contacts-link" target="_blank">@magicwebdev</a>
+              </li>
+              <li class="contacts-item">Discord:
+                <a href="https://discordapp.com/users/919839528510971946/" class="contacts-link" target="_blank">magicwebdev#4653</a>
+              </li>
+              <li class="contacts-item">GitHub:
+                <a href="https://github.com/magicwebdev" class="contacts-link" target="_blank">magicwebdev</a>
+              </li>
+            </ul>
+          </div>
 
-      <div id="skills" class="skills">
-        <h2 class="title">Skills:</h2>
-        <ul class="skills-list">
-          <li class="skills-item">HTML&CSS</li>
-          <li class="skills-item">JavaScript</li>
-          <li class="skills-item">C#</li>
-          <li class="skills-item">SQL</li>
-          <li class="skills-item">Figma</li>
-        </ul>
-      </div>
+          <div id="education" class="education">
+            <h2 class="title">Education:</h2>
+            <p class="text">
+              <span>Northern (Arctic) Federal University named after M.V. Lomonosov (NArFU)</span><br>
+              Еngineer in the specialty "Information systems and technologies"
+            </p>
+          </div>
 
-      <div id="code" class="code">
-        <h2 class="title">Code example:</h2>
-        <pre>
-          <code class="code-js">
-            function checkCookies(){
-              let cookieDate = localStorage.getItem('cookieDate');
-              let cookieNotification = document.querySelector('.cookie');
-              let cookieBtn = cookieNotification.querySelector('.cookie__btn');
+          <div id="skills" class="skills">
+            <h2 class="title">Skills:</h2>
+            <ul class="skills-list">
+              <li class="skills-item">HTML&CSS</li>
+              <li class="skills-item">JavaScript</li>
+              <li class="skills-item">C#</li>
+              <li class="skills-item">SQL</li>
+              <li class="skills-item">Figma</li>
+            </ul>
+          </div>
 
-              if( !cookieDate || (+cookieDate + 31536000000) &lt; Date.now() ){
-                  setTimeout(function () {
-                    cookieNotification.classList.add('show');
-                  }, 10000);
-              }
+          <div id="english" class="english">
+            <h2 class="title">English:</h2>
+            <p class="text">А2 (Pre-Intermediate)</p>
+          </div>
+        </div>
 
-              cookieBtn.addEventListener('click', function(){
-                  localStorage.setItem( 'cookieDate', Date.now() );
-                  cookieNotification.classList.remove('show');
-              })
-            }
-            checkCookies();
-          </code>
-        </pre>
-      </div>
+        <div class="content-center">
+          <div id="experience" class="experience">
+            <h2 class="title">Experience:</h2>
+            <ul class="experience-list">
+              <li class="experience-item">
+                <p class="years">2010 - 2011</p>
+                <p class="text"><span>Programmer</span> at the NArFU Software Implementation and Development Laboratory</p>
+              </li>
+              <li class="experience-item">
+                <p class="years">2012 - Present</p>
+                <p class="text"><span>Freelancer</span></p>
+              </li>
+            </ul>
+          </div>
 
-      <div id="projects" class="projects">
-        <h2 class="title">Projects:</h2>
-        <ul class="projects-list">
-          <li class="projects-item"><a class="projects-link" href="https://designvisions.ru/" target="_blank">DesignVisions</a></li>
-          <li class="projects-item"><a class="projects-link" href="https://xn--80akajdusffcfvbr.xn--p1ai/" target="_blank">Фирма Репетитор</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
+          <div id="code" class="code">
+            <h2 class="title">Code example:</h2>
+            <pre><code class="code-js">function bubbleSort(arr) {
+  const length = arr.length;
+  for (let i = 0; i < length-1; i++) {
+    for (let j = 0; j < length-1-i; j++) {
+      if (arr[j + 1] < arr[j]) {
+        [arr[j + 1], arr[j]] = [arr[j], arr[j + 1]];
+      }
+    }
+  }
+  return arr;
+}</code></pre>
+          </div>
 
-  <footer>
-    <div class="container">
-      <p class="copy">&#169; 2022 <a href="https://github.com/magicwebdev" class="copy-link" target="_blank">magicwebdev</a></p>
-      <a href="https://rs.school/js/" class="logo-link" target="_blank">
-        <img src="images/logo-rss.svg" alt="logo rsschool" class="logo-img">
-      </a>
-    </div>
-  </footer>
+          <div id="projects" class="projects">
+            <h2 class="title">Projects:</h2>
+            <ul class="projects-list">
+              <li class="projects-item"><a class="projects-link" href="https://designvisions.ru/" target="_blank">DesignVisions</a></li>
+              <li class="projects-item"><a class="projects-link" href="https://xn--80akajdusffcfvbr.xn--p1ai/" target="_blank">Фирма Репетитор</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <p class="copy">&#169; 2022 <a href="https://github.com/magicwebdev" class="copy-link" target="_blank">magicwebdev</a></p>
+        <a href="https://rs.school/js/" class="logo-link" target="_blank">
+          <img src="images/logo-rss.svg" alt="logo rsschool" class="logo-img" width="70" height="24">
+        </a>
+    </footer>
+
+  </div>
 </body>
 </html>
