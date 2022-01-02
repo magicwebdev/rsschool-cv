@@ -1,48 +1,47 @@
 # Aleksandra Khrapkova
+Front-end Developer
+## About me:
+Hi, my name is Alexandra and I'm a junior front-end developer. My goal is to become a professional full-stack Javascript developer. I want to create cool websites, web and mobile apps with WOW effect! I love complex tasks, constantly working on myself, strive to gain new knowledge and perfection in my profession.
 
 ## Contacts info:
 * Location: Russia, Arkhangelsk
-* Phone: +7 (960) 006-73-55
 * Email: axi83@mail.ru
-* GitHub: [magicwebdev](https://github.com/magicwebdev)
+* Telegram: [@magicwebdev](https://telegram.me/magicwebdev)
 * Discord: magicwebdev#4653
-## About me:
-I love complex tasks, constantly working on myself, strive to gain new knowledge and perfection in my profession
-
-## Skills:
-* HTML&CSS;
-* JavaScript;
-* C#, Java;
-* Git, npm, Gulp;
-* Figma, Adobe Photoshop.
-
-## Code examples:
-1. Codewars:
-  ```javascript
-  function multiply(a, b){
-  return a * b;
-  }
-
-  console.log(multiply(1, 7));
-  ```
-2. My projects:
-* [LandingPage "DesignVisions"](https://designvisions.ru/)
-* [LandingPage "Фирма Репетитор"](https://xn--80akajdusffcfvbr.xn--p1ai/)
+* GitHub: [magicwebdev](https://github.com/magicwebdev)
 
 ## Education:
-2005 - 2010
 Northern (Arctic) Federal University named after M.V. Lomonosov (NArFU)
 Еngineer in the specialty "Information systems and technologies"
-
-2010 - 2021
-Various online courses
-
+## English:
+А2 (Pre-Intermediate)
 ## Experience:
 2010 - 2011
 Programmer at the NArFU Software Implementation and Development Laboratory
 
-2012 - 2021
+2012 - Present
 Freelancer
+## Skills:
+* HTML&CSS;
+* JavaScript;
+* C#;
+* SQL;
+* Figma.
 
-## English language level:
-A1 (Elementary)
+## Code example:
+```javascript
+function bubbleSort(arr) {
+    const length = arr.length;
+    for (let i = 0; i < length-1; i++) {
+      for (let j = 0; j < length-1-i; j++) {
+        if (arr[j + 1] < arr[j]) {
+          [arr[j + 1], arr[j]] = [arr[j], arr[j + 1]];
+        }
+      }
+    }
+    return arr;
+}
+```
+## Projects:
+* [DesignVisions](https://designvisions.ru/)
+* [Фирма Репетитор](https://xn--80akajdusffcfvbr.xn--p1ai/)
