@@ -77,8 +77,8 @@ span {
 
 .title {
   margin: 0 0 10px;
-  font-size: 22px;
   font-weight: 600;
+  font-size: 22px;
   color: #fa8669;
 }
 
@@ -88,39 +88,39 @@ span {
 }
 
 .header::after {
-  content: '';
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   bottom: 0;
+  left: 50%;
+  z-index: 10;
   display: block;
   width: 90%;
   height: 1px;
+  content: '';
   background-image: url('images/line.svg');
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   opacity: .8;
-  z-index: 10;
+  transform: translateX(-50%);
 }
 
 .menu-list {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .menu-item {
   margin-top: 0;
-  font-weight: 600;
   padding: 10px;
+  font-weight: 600;
 }
 
 .menu-link {
-  color: #fff;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
   opacity: 1;
   transition: all .5s;
 }
@@ -131,25 +131,25 @@ span {
 
 .cover {
   position: relative;
-  padding: 40px 0 60px;
   display: flex;
+  padding: 40px 0 60px;
 }
 
 .cover::after {
-  content: '';
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   bottom: 1px;
+  left: 50%;
+  z-index: 10;
   display: block;
   width: 90%;
   height: 1px;
+  content: '';
   background-image: url('images/line.svg');
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   opacity: .8;
-  z-index: 10;
+  transform: translateX(-50%);
 }
 
 .hero {
@@ -186,10 +186,10 @@ span {
   position: absolute;
   top: 47%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 10;
   margin: 0 auto;
   border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .about {
@@ -214,20 +214,20 @@ span {
 }
 
 .content-sidebar::after {
-  content: '';
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   right: 2px;
+  z-index: 10;
   display: block;
   width: 1px;
   height: 90%;
+  content: '';
   background-image: url('images/vertical-line.svg');
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   opacity: .8;
-  z-index: 10;
+  transform: translateY(-50%);
 }
 
 .content-center {
@@ -245,17 +245,17 @@ span {
 }
 
 .contacts-item::before {
-  content: '';
   position: absolute;
   top: 6px;
   left: 0;
   display: block;
   width: 16px;
   height: 16px;
+  content: '';
   background-image: url('images/map.svg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .email::before {
@@ -280,17 +280,17 @@ span {
 }
 
 .projects-item::before {
-  content: '';
   position: absolute;
   top: 2px;
   left: 0;
   display: block;
   width: 20px;
   height: 20px;
+  content: '';
   background-image: url('images/folder.svg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .education {
@@ -305,27 +305,27 @@ span {
 .skills-percent {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   right: 0;
+  z-index: 10;
   display: block;
   width: 80%;
   height: 4px;
   background-color: #C4C4C4;
   border-radius: 16px;
-  z-index: 10;
+  transform: translateY(-50%);
 }
 
 .skills-item::after {
-  content: '';
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   right: 0;
   display: block;
   width: 60%;
   height: 4px;
+  content: '';
   background-color: #fa8669;
   border-radius: 16px;
+  transform: translateY(-50%);
 }
 
 .experience li + li {
@@ -333,36 +333,36 @@ span {
 }
 
 .listing {
-  white-space: pre-wrap;
   padding: 20px;
-  border-radius: 16px;
+  white-space: pre-wrap;
   background-color: rgba(255, 255, 255, .1);
+  border-radius: 16px;
 }
 
 .footer {
   position: relative;
-  padding: 40px 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 40px 0;
   color: #fff;
 }
 
 .footer::before {
-  content: '';
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   top: 2px;
+  left: 50%;
+  z-index: 10;
   display: block;
   width: 90%;
   height: 1px;
+  content: '';
   background-image: url('images/line.svg');
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   opacity: .8;
-  z-index: 10;
+  transform: translateX(-50%);
 }
 
 .logo-link {
@@ -398,7 +398,7 @@ span {
   }
 
   .content-center {
-    padding-left: 0;
     margin-top: 40px;
+    padding-left: 0;
   }
 }
