@@ -1,1 +1,1 @@
-# rsschool-cv
+https://magicwebdev.github.io/rsschool-cv/
